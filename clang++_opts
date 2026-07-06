@@ -1,0 +1,17 @@
+clang++ -std=c++23 prog.cpp -o prog.exe -Wall -Wextra -ggdb -Weffc++ -Wconversion -Wsign-conversion -Werror
+
+clang++ -> compiler
+-std=c++23 -> c+= version
+-o -> output file name
+-Wall -> enable most commonly used warnings
+-Wextra -> enable extra warnings that are not used in -Wall
+-ggdb -> generate debugging information optimized for gdb
+-Weffc++ -> Warn about effects about Scott Mayers Effective c++ guidelines
+-Wconversion -> Warn about implicit type conversions and may change values
+-Wsign-conversion -> Warn when signedness changes during conversions
+-Werror -> treat every warnings as compilation error
+-O2 -> seocnd level optmization
+-march=native -> optimize for current cpu
+-mtune=native -> optimize scheduling for cpu
+-ffast-math -> ignore IEEE-754 rules to generate faster code
+
